@@ -12,14 +12,6 @@ package = "netlify-plugin-cache"
   [plugins.inputs]
   paths = [ ".cache" ]
 
-  [[plugins]]
-  package = "@algolia/netlify-plugin-crawler"
-    [plugins.inputs]
-    branches = ['main', 'develop', 'feat/add-algolia']
-    disabled = false
-    pathPrefix = "/"
-    customDomain = "https://curious-flan-b0954c.netlify.app"
-    renderJavaScript = true
 
 
 
