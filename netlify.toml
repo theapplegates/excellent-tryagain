@@ -18,7 +18,7 @@ package = "netlify-plugin-cache"
     branches = ['main', 'develop', 'feat/add-algolia']
     disabled = false
     pathPrefix = "/"
-    customDomain = "https://delightful-empanada-52f130.netlify.app"
+    customDomain = "https://curious-flan-b0954c.netlify.app"
     renderJavaScript = true
 
 
