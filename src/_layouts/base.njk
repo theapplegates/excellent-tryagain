@@ -2,19 +2,12 @@
 
 <!DOCTYPE html>
 <html lang="{{ meta.lang }}">
+   <meta charset="utf-8">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-  <script type="text/javascript">
-    algoliasearchNetlify({
-      appId: 'EBTPNLYEA2',
-      apiKey: '9af10b5e0108209c5df0af6c3bc91dc7',
-      siteId: '71fc9714-386a-4bb6-a26b-984778150011',
-      branch: 'main',
-      selector: 'div#search',
-    });
-  </script>
-  <div id="search"></div>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -55,6 +48,11 @@
 
     <!-- include base schema  -->
     {% include "schemas/base-schema.njk" %}
+    <!-- Before the closing </head> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
+    />
   </head>
 
   <body>
@@ -74,5 +72,22 @@
       src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
     ></script>
     {% endif %}
+    <!-- Before the closing </body> -->
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+      docsearch({
+        // Your Search API Key
+        apiKey: '03d9a726aa662b449953113ca9f5ecaa',
+        // The index populated by the DocSearch scraper
+        indexName: 'index',
+        // Your Algolia Application ID
+        appId: 'HK1HO6U689',
+        // Replace inputSelector with a CSS selector
+        // matching your search input
+        inputSelector: 'div#search',
+        // Set debug to true to inspect the dropdown
+        debug: false,
+      });
+    </script>
   </body>
 </html>
