@@ -6,7 +6,7 @@ permalink: /search/index.html
 description: Search Page
 layout: page
 ---
-<!DOCTYPE  html>
+
 <html>
 	<head>
   	...
