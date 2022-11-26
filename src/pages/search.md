@@ -39,5 +39,3 @@ layout: page
 
 	</body>
 </html>
-  
-<div id="search"></div>
